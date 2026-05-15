@@ -1,0 +1,20 @@
+{
+    "generator":  "PowerShell data/generate_full_dataset.ps1",
+    "out_dir":  "C:\\Users\\olive\\OneDrive\\Desktop\\R3_Revised0515\\data\\full_de_en",
+    "splits":  {
+                   "train.tsv":  {
+                                     "sha256":  "f1b7eb0cbec5aaba38bb854b9a22b6f4f36f6dddffffa0c11fecce9e0cf74792",
+                                     "lines":  120000
+                                 },
+                   "dev.tsv":  {
+                                   "sha256":  "e98aa5d0d65dc94770632d07e2c6cdfad7876de4386714c7e9f41eab95c933a5",
+                                   "lines":  5000
+                               },
+                   "test.tsv":  {
+                                    "sha256":  "fc5c41e6112968b803d143eed115ddd7274cf6ff3e00a76f5d5c364b88edc048",
+                                    "lines":  5000
+                                }
+               },
+    "format":  "TSV with header: source\u003cTAB\u003etarget",
+    "note":  "Synthetic data. Python uses random.Random; PowerShell uses System.Random - line text at same index may differ."
+}
